@@ -22,6 +22,18 @@
         <java.version>17</java.version>
     </properties>
 
+     <distributionManagement>
+        <repository>
+           <id>nexus</id>
+           <url>http://localhost:8081/#browse/browse:maven-releases</url>
+        </repository>
+        <snapshotRepository>
+           <id>nexus</id>
+           <url>http://localhost:8081/#browse/browse:maven-snapshots</url>
+        </snapshotRepository>
+     </distributionManagement>
+    
+         
     <dependencies>
         <!-- Dépendance pour créer une application Web Spring Boot -->
         <dependency>
