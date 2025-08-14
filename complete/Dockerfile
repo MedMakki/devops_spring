@@ -8,7 +8,8 @@ WORKDIR /app
 COPY target/spring-boot-complete-0.0.1-SNAPSHOT.jar app.jar
 
 # Exposer le port 8080 (port par défaut Spring Boot)
-EXPOSE 8080
+EXPOSE 8090
 
 # Commande pour lancer l’application
 ENTRYPOINT ["java", "-jar", "app.jar"]
+
