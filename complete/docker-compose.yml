@@ -4,7 +4,7 @@ services:
   app:
     build: .
     ports:
-      - "8080:8080"
+      - "8090:8090"
     depends_on:
       - db
     networks:
@@ -33,3 +33,4 @@ volumes:
 networks:
   springnet:
     driver: bridge
+
